@@ -1,0 +1,71 @@
+/* Keyframe animations. Only transform and opacity move, so they stay smooth on budget phones. */
+
+.anim-scan {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: inherit;
+}
+.anim-scan span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 22%;
+  background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--accent) 45%, transparent) 85%, var(--lime));
+  box-shadow: 0 6px 24px var(--accent);
+  animation: anim-sweep 1.6s ease-in-out infinite alternate;
+}
+@keyframes anim-sweep {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(455%); }
+}
+
+.anim-seeds {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.anim-seeds span {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--seed);
+  opacity: 0.55;
+  animation: anim-drift linear infinite;
+}
+@keyframes anim-drift {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(14px, -26px) rotate(140deg); }
+  100% { transform: translate(0, 0) rotate(360deg); }
+}
+
+.anim-float { animation: anim-float 6s ease-in-out infinite; }
+@keyframes anim-float {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+.anim-pulse { animation: anim-pulse 2.2s ease-out infinite; }
+@keyframes anim-pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+
+.anim-ring { position: relative; display: inline-grid; place-items: center; }
+.anim-ring svg { position: absolute; inset: 0; }
+.anim-ring__label { position: relative; text-align: center; }
+
+.anim-bar { height: 10px; border-radius: 99px; background: var(--track); overflow: hidden; }
+.anim-bar__fill { height: 100%; border-radius: inherit; }
+
+/* Theme and language switches cross fade instead of jumping */
+.theme-fade, .theme-fade * {
+  transition: background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-scan span, .anim-seeds span, .anim-float, .anim-pulse { animation: none; }
+  .anim-scan span { top: 40%; }
+}

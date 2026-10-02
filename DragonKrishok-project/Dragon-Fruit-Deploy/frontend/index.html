@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="google" content="notranslate" />
+    <meta name="description" content="DragonKrishok: AI dragon fruit quality check for farmers. Live camera, heatmap, affected area and PDF reports in English and Bangla." />
+    <meta name="theme-color" content="#C2185B" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>DragonKrishok | Dragon fruit quality AI</title>
+    <script>
+      // Apply the saved theme before first paint so the page never flashes.
+      try {
+        var t = localStorage.getItem("dk-theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

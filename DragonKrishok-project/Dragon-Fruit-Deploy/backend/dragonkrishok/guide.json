@@ -1,0 +1,26 @@
+{
+  "en": {
+    "title": "Farmer guide: growing dragon fruit",
+    "intro": "Dragon fruit is a climbing cactus. It likes sun, hates standing water and starts giving fruit from the second year. These are general tips; ask your local agriculture office (DAE) for advice for your land.",
+    "sections": [
+      {"id": "site", "title": "Choose the place", "items": ["Full sun for most of the day, on high land that never floods", "Loose, well drained loam or sandy loam; raise the beds if water stays after rain", "Mix plenty of rotted cow dung or compost into each pit before planting"]},
+      {"id": "plant", "title": "Plant on posts", "items": ["Set a strong concrete post about 1.5 m high with a ring or old tyre on top", "Plant 3 to 4 healthy cuttings around each post and tie them loosely to it", "Keep about 2.5 to 3 m between posts so air and light reach every plant"]},
+      {"id": "care", "title": "Water, feed and prune", "items": ["Water when the topsoil is dry; never let water stand around the roots", "Feed with compost every few months and a balanced fertiliser as the officer advises", "Cut away weak, crowded and diseased stems after each harvest season"]},
+      {"id": "flower", "title": "Flowers and fruit", "items": ["Big white flowers open at night and close next morning", "Hand pollination in the evening or early morning can raise fruit set", "Fruit is usually ready about 30 to 50 days after the flower opens"]},
+      {"id": "harvest", "title": "Harvest and store", "items": ["Pick when the skin is fully coloured and the scales start to soften", "Cut with a clean knife; do not pull or drop the fruit", "Keep fruit in the shade and sort Bad and Defect fruit out before selling"]},
+      {"id": "scan", "title": "Check with DragonKrishok", "items": ["Take one clear photo of each fruit in daylight", "Scan before harvest to see if it is Immature or Mature", "Scan after harvest to sort Bad and Defect fruit and download a report"]}
+    ]
+  },
+  "bn": {
+    "title": "কৃষক নির্দেশিকা: ড্রাগন ফল চাষ",
+    "intro": "ড্রাগন ফল একটি লতানো ক্যাকটাস। এটি রোদ পছন্দ করে, জমে থাকা পানি সহ্য করে না এবং দ্বিতীয় বছর থেকে ফল দেয়। এগুলো সাধারণ পরামর্শ; আপনার জমির জন্য স্থানীয় কৃষি অফিসের (ডিএই) পরামর্শ নিন।",
+    "sections": [
+      {"id": "site", "title": "জায়গা বাছাই", "items": ["দিনের বেশির ভাগ সময় পুরো রোদ পড়ে এমন উঁচু জমি, যেখানে কখনো পানি ওঠে না", "ঝুরঝুরে, পানি নিষ্কাশন হয় এমন দোআঁশ বা বেলে দোআঁশ মাটি; বৃষ্টির পর পানি জমলে বেড উঁচু করুন", "লাগানোর আগে প্রতিটি গর্তে প্রচুর পচা গোবর বা কম্পোস্ট মেশান"]},
+      {"id": "plant", "title": "খুঁটিতে চারা লাগানো", "items": ["প্রায় দেড় মিটার উঁচু শক্ত সিমেন্টের খুঁটি পুঁতুন, মাথায় একটি রিং বা পুরোনো টায়ার দিন", "প্রতিটি খুঁটির চারপাশে ৩ থেকে ৪টি সুস্থ কাটিং লাগান এবং আলগা করে খুঁটির সাথে বাঁধুন", "খুঁটি থেকে খুঁটির দূরত্ব প্রায় আড়াই থেকে তিন মিটার রাখুন, যাতে প্রতিটি গাছে বাতাস ও আলো পৌঁছায়"]},
+      {"id": "care", "title": "সেচ, সার ও ছাঁটাই", "items": ["ওপরের মাটি শুকালে সেচ দিন; শিকড়ের চারপাশে কখনো পানি জমতে দেবেন না", "কয়েক মাস পরপর কম্পোস্ট দিন এবং কর্মকর্তার পরামর্শ মতো সুষম সার দিন", "প্রতি মৌসুমে ফল তোলার পর দুর্বল, ঘন ও রোগা ডাল কেটে ফেলুন"]},
+      {"id": "flower", "title": "ফুল ও ফল", "items": ["বড় সাদা ফুল রাতে ফোটে এবং পরদিন সকালে বন্ধ হয়ে যায়", "সন্ধ্যায় বা ভোরে হাত দিয়ে পরাগায়ন করলে ফল বেশি ধরে", "ফুল ফোটার সাধারণত ৩০ থেকে ৫০ দিন পর ফল তোলার উপযোগী হয়"]},
+      {"id": "harvest", "title": "ফল তোলা ও সংরক্ষণ", "items": ["খোসা পুরো রঙিন হলে এবং আঁশ নরম হতে শুরু করলে ফল তুলুন", "পরিষ্কার ছুরি দিয়ে কাটুন; টেনে ছিঁড়বেন না বা ফেলে দেবেন না", "ফল ছায়ায় রাখুন এবং বিক্রির আগে নষ্ট ও ত্রুটিযুক্ত ফল আলাদা করুন"]},
+      {"id": "scan", "title": "ড্রাগন কৃষক দিয়ে যাচাই", "items": ["দিনের আলোয় প্রতিটি ফলের একটি পরিষ্কার ছবি তুলুন", "ফল তোলার আগে স্ক্যান করে দেখুন ফলটি অপরিপক্ব না পরিপক্ব", "ফল তোলার পর স্ক্যান করে নষ্ট ও ত্রুটিযুক্ত ফল আলাদা করুন এবং রিপোর্ট ডাউনলোড করুন"]}
+    ]
+  }
+}

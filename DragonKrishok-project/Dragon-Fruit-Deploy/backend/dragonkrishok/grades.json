@@ -1,0 +1,82 @@
+{
+  "Bad": {
+    "color": "#3F3A3D",
+    "action": "remove",
+    "en": {
+      "name": "Bad",
+      "action": "Remove now",
+      "summary": "The fruit is spoiled. It is not fit to sell or eat.",
+      "description": "A bad dragon fruit shows rot, soft sunken patches, mould or dark wet areas. Spoilage spreads quickly to nearby fruit in a crate or store.",
+      "signs": ["Soft, sunken or watery patches on the skin", "Brown or black rotting areas, sometimes with mould", "Sour or bad smell, bracts dried and dark"],
+      "actions": ["Take the fruit out of the crate or plant today", "Do not mix it with good fruit; bury or compost it away from the garden", "Check nearby fruit and clean crates and knives before reuse"]
+    },
+    "bn": {
+      "name": "নষ্ট",
+      "action": "এখনই সরান",
+      "summary": "ফলটি নষ্ট হয়ে গেছে। বিক্রি বা খাওয়ার উপযোগী নয়।",
+      "description": "নষ্ট ড্রাগন ফলে পচন, নরম বসে যাওয়া দাগ, ছত্রাক বা কালচে ভেজা অংশ দেখা যায়। ঝুড়ি বা গুদামে পাশের ফলেও পচন দ্রুত ছড়ায়।",
+      "signs": ["খোসায় নরম, বসে যাওয়া বা পানিভরা দাগ", "বাদামি বা কালো পচা অংশ, কখনো ছত্রাকসহ", "টক বা খারাপ গন্ধ, পাপড়ি শুকনো ও কালচে"],
+      "actions": ["আজই ফলটি ঝুড়ি বা গাছ থেকে সরিয়ে ফেলুন", "ভালো ফলের সাথে মেশাবেন না; বাগান থেকে দূরে মাটিচাপা দিন বা কম্পোস্ট করুন", "পাশের ফলগুলো দেখুন এবং ঝুড়ি ও ছুরি পরিষ্কার করে আবার ব্যবহার করুন"]
+    }
+  },
+  "Defect": {
+    "color": "#B5471B",
+    "action": "sort",
+    "en": {
+      "name": "Defect",
+      "action": "Sort separately",
+      "summary": "The fruit has skin damage but is not spoiled.",
+      "description": "A defective dragon fruit has marks such as cracks, scars, sunburn, bruises or insect bites. The inside is often still good, but the fruit gets a lower market price and can spoil sooner.",
+      "signs": ["Cracks, cuts or healed scars on the skin", "Pale or brown sunburn patches, bruises from handling", "Small spots or holes from insects, damaged bracts"],
+      "actions": ["Keep it apart from top grade fruit and sell or use it soon", "Handle fruit gently and pad crates to avoid bruises", "Look for the cause in the garden: pests, strong sun or rough harvesting"]
+    },
+    "bn": {
+      "name": "ত্রুটিযুক্ত",
+      "action": "আলাদা করে রাখুন",
+      "summary": "ফলের খোসায় ক্ষতি আছে, তবে ফলটি নষ্ট নয়।",
+      "description": "ত্রুটিযুক্ত ড্রাগন ফলে ফাটল, ক্ষতচিহ্ন, রোদে পোড়া, আঘাতের দাগ বা পোকার কামড় দেখা যায়। ভেতরটা প্রায়ই ভালো থাকে, কিন্তু বাজারদর কম পায় এবং তাড়াতাড়ি নষ্ট হতে পারে।",
+      "signs": ["খোসায় ফাটল, কাটা বা শুকিয়ে যাওয়া ক্ষতচিহ্ন", "ফ্যাকাশে বা বাদামি রোদে পোড়া দাগ, নাড়াচাড়ায় থেঁতলানো দাগ", "পোকার কারণে ছোট দাগ বা ছিদ্র, ক্ষতিগ্রস্ত পাপড়ি"],
+      "actions": ["সেরা মানের ফল থেকে আলাদা রাখুন এবং দ্রুত বিক্রি বা ব্যবহার করুন", "ফল আলতো করে ধরুন এবং ঝুড়িতে নরম কিছু বিছিয়ে দিন", "বাগানে কারণ খুঁজুন: পোকা, কড়া রোদ বা অসাবধানে ফল তোলা"]
+    }
+  },
+  "Immature": {
+    "color": "#4E7D1E",
+    "action": "wait",
+    "en": {
+      "name": "Immature",
+      "action": "Wait to harvest",
+      "summary": "The fruit is healthy but not ripe yet.",
+      "description": "An immature dragon fruit is still green or only partly coloured, with firm skin and stiff green bracts. Picked too early, it stays bland and does not ripen well after harvest.",
+      "signs": ["Skin mostly green or only partly pink or red", "Bracts (the scales) stiff, green and pointing outward", "Fruit feels very firm and looks small for its variety"],
+      "actions": ["Leave it on the plant and check again every few days", "Harvest when the skin is fully coloured, usually about 30 to 50 days after flowering", "Keep watering and feeding steady while the fruit fills"]
+    },
+    "bn": {
+      "name": "অপরিপক্ব",
+      "action": "তোলার জন্য অপেক্ষা করুন",
+      "summary": "ফলটি সুস্থ, তবে এখনো পাকেনি।",
+      "description": "অপরিপক্ব ড্রাগন ফল এখনো সবুজ বা আংশিক রঙিন থাকে, খোসা শক্ত এবং সবুজ পাপড়িগুলো খাড়া থাকে। আগে তুললে ফলের স্বাদ কম হয় এবং পরে ঠিকমতো পাকে না।",
+      "signs": ["খোসা বেশির ভাগ সবুজ বা আংশিক গোলাপি বা লাল", "পাপড়িগুলো (আঁশ) শক্ত, সবুজ ও বাইরের দিকে খাড়া", "ফল খুব শক্ত এবং জাতের তুলনায় ছোট দেখায়"],
+      "actions": ["গাছেই রেখে দিন এবং কয়েক দিন পরপর দেখুন", "খোসা পুরো রঙিন হলে তুলুন, সাধারণত ফুল ফোটার ৩০ থেকে ৫০ দিন পর", "ফল বড় হওয়ার সময় নিয়মিত সেচ ও সার দিন"]
+    }
+  },
+  "Mature": {
+    "color": "#C2185B",
+    "action": "ready",
+    "en": {
+      "name": "Mature",
+      "action": "Ready to harvest",
+      "summary": "The fruit is ripe and in good condition.",
+      "description": "A mature dragon fruit has bright, even skin colour and bracts that are starting to soften and turn at the tips. This is the best time to harvest for taste and market price.",
+      "signs": ["Bright, even pink, red or yellow skin for its variety", "Bracts softening, tips starting to dry or turn colour", "Skin gives slightly under gentle thumb pressure"],
+      "actions": ["Harvest with a clean, sharp knife, keeping a short piece of stem", "Keep fruit in the shade, in a single layer, and do not wash before storing", "Sell within a few days, or keep in a cool store around 10 °C for up to about two weeks"]
+    },
+    "bn": {
+      "name": "পরিপক্ব",
+      "action": "তোলার উপযোগী",
+      "summary": "ফলটি পাকা এবং ভালো অবস্থায় আছে।",
+      "description": "পরিপক্ব ড্রাগন ফলের খোসার রং উজ্জ্বল ও সমান, আর পাপড়িগুলো নরম হতে শুরু করে এবং মাথার দিকে রং বদলায়। স্বাদ ও বাজারদরের জন্য এটাই ফল তোলার সেরা সময়।",
+      "signs": ["জাত অনুযায়ী উজ্জ্বল ও সমান গোলাপি, লাল বা হলুদ খোসা", "পাপড়ি নরম হচ্ছে, মাথা শুকাতে বা রং বদলাতে শুরু করেছে", "আঙুলে আলতো চাপ দিলে খোসা সামান্য দেবে যায়"],
+      "actions": ["পরিষ্কার ধারালো ছুরি দিয়ে বোঁটার ছোট অংশসহ ফল কাটুন", "ফল ছায়ায় এক স্তরে রাখুন, সংরক্ষণের আগে ধোবেন না", "কয়েক দিনের মধ্যে বিক্রি করুন, অথবা প্রায় ১০ ডিগ্রি সেলসিয়াসে ঠান্ডা ঘরে প্রায় দুই সপ্তাহ পর্যন্ত রাখুন"]
+    }
+  }
+}

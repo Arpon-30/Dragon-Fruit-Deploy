@@ -1,0 +1,47 @@
+/* Colours taken from the fruit: white flesh, magenta skin, green bracts, black seeds. */
+:root {
+  color-scheme: light;
+  --bg: #fdf8f6;
+  --bg-tint: #fbeef3;
+  --surface: #ffffff;
+  --ink: #2a1020;
+  --muted: #6b4a5c;
+  --line: #ebd3de;
+  --accent: #c2185b;
+  --accent-ink: #ffffff;
+  --accent-soft: #fce4ee;
+  --lime: #9ccc3c;
+  --leaf: #4e7d1e;
+  --seed: #2a1020;
+  --flesh: #fffdfb;
+  --track: #f3e3ea;
+  --code-bg: #1e0c17;
+  --code-ink: #f6e9ef;
+  --shadow: 0 18px 48px -24px rgba(122, 18, 64, 0.35);
+
+  --font-display: "Bricolage Grotesque Variable", "Hind Siliguri", system-ui, sans-serif;
+  --font-body: "Hind Siliguri", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --radius: 20px;
+  --radius-sm: 12px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1b0f17;
+  --bg-tint: #231420;
+  --surface: #2c1824;
+  --ink: #f6e9ef;
+  --muted: #cdb2c0;
+  --line: #45293a;
+  --accent: #ff4f93;
+  --accent-ink: #1b0f17;
+  --accent-soft: #3f1a2e;
+  --lime: #b5e15a;
+  --leaf: #b5e15a;
+  --seed: #f6e9ef;
+  --flesh: #f6efe9;
+  --track: #3a2231;
+  --code-bg: #120910;
+  --shadow: 0 18px 48px -24px rgba(0, 0, 0, 0.7);
+}
