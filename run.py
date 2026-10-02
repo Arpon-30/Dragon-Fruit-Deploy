@@ -22,5 +22,10 @@ if not (FRONTEND / "dist" / "index.html").exists():
     subprocess.run([npm, "run", "build"], cwd=FRONTEND, check=True)
 
 port = os.environ.get("PORT", "7860")
-os.chdir(ROOT / "backend")
-os.execvp(sys.executable, [sys.executable, "-m", "uvicorn", "dragonkrishok.server:app", "--host", "0.0.0.0", "--port", port])
+print(f"DragonKrishok: open http://localhost:{port}  (Ctrl+C to stop)")
+# subprocess, not os.exec*: on Windows os.exec* breaks paths that contain spaces
+try:
+    sys.exit(subprocess.call([sys.executable, "-m", "uvicorn", "dragonkrishok.server:app",
+                              "--host", "0.0.0.0", "--port", port], cwd=ROOT / "backend"))
+except KeyboardInterrupt:
+    pass
