@@ -1,51 +1,9 @@
 import { Item, Reveal, Stagger } from "@animations";
-import { useEffect, useState } from "react";
-import { downloadGuide } from "../lib/api.js";
 import { useLang } from "../i18n/index.jsx";
-import Icon from "./Icon.jsx";
-
-const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
-const standalone = () => window.matchMedia?.("(display-mode: standalone)").matches;
-
-/** The browser's install prompt, when it offers one. */
-function useInstall() {
-  const [prompt, setPrompt] = useState(null);
-  const [installed, setInstalled] = useState(standalone);
-  useEffect(() => {
-    const ready = (e) => { e.preventDefault(); setPrompt(e); };
-    const done = () => setInstalled(true);
-    window.addEventListener("beforeinstallprompt", ready);
-    window.addEventListener("appinstalled", done);
-    return () => {
-      window.removeEventListener("beforeinstallprompt", ready);
-      window.removeEventListener("appinstalled", done);
-    };
-  }, []);
-  const install = async () => {
-    prompt.prompt();
-    if ((await prompt.userChoice).outcome === "accepted") setInstalled(true);
-    setPrompt(null);
-  };
-  return { canInstall: !!prompt, installed, install };
-}
 
 export default function Farmer({ guide }) {
   const { t, lang, num } = useLang();
-  const { canInstall, installed, install } = useInstall();
-  const [busy, setBusy] = useState(false);
-  const [failed, setFailed] = useState(false);
   const g = guide?.[lang];
-
-  const guidePdf = async () => {
-    setBusy(true);
-    setFailed(false);
-    try {
-      await downloadGuide(lang);
-    } catch {
-      setFailed(true);
-    }
-    setBusy(false);
-  };
 
   return (
     <section className="section section--tint" id="farmer">
@@ -68,23 +26,6 @@ export default function Farmer({ guide }) {
             </Stagger>
           </>
         )}
-        <Reveal className="farmer__cta card">
-          <div>
-            <h3>{t.farmer.install}</h3>
-            <p className="muted">{ios && !installed ? t.farmer.iosHint : t.farmer.installHint}</p>
-          </div>
-          <div className="report__buttons">
-            <button type="button" className="btn btn--primary" disabled={busy} onClick={guidePdf}>
-              {busy ? <span className="spinner" /> : <Icon name="download" />} {t.farmer.download}
-            </button>
-            {installed ? (
-              <span className="btn btn--ghost is-static"><Icon name="check" /> {t.farmer.installed}</span>
-            ) : canInstall && (
-              <button type="button" className="btn btn--ghost" onClick={install}><Icon name="install" /> {t.farmer.install}</button>
-            )}
-          </div>
-          {failed && <p className="alert" role="alert"><Icon name="alert" /> {t.errors.pdf}</p>}
-        </Reveal>
       </div>
     </section>
   );

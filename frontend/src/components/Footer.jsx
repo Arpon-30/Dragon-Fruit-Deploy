@@ -13,10 +13,6 @@ export default function Footer() {
             <p className="brand"><Logo /> <span>{t.brand}</span></p>
             <p className="footer__about">{t.footer.about}</p>
           </div>
-          <div className="footer__credits">
-            <p><span>{t.footer.made}</span><strong>{t.footer.maker}</strong></p>
-            <p><span>{t.footer.supervisor}</span><strong>{t.footer.supervisorName}</strong></p>
-          </div>
           <details className="footer__sources">
             <summary>{t.footer.sources}</summary>
             <ul>{SOURCES.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.label}</a></li>)}</ul>

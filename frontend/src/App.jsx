@@ -1,6 +1,5 @@
 import { Reveal } from "@animations";
 import { Suspense, lazy, useEffect, useState } from "react";
-import Developers from "./components/Developers.jsx";
 import Farmer from "./components/Farmer.jsx";
 import Footer from "./components/Footer.jsx";
 import Grades from "./components/Grades.jsx";
@@ -40,7 +39,6 @@ export default function App() {
           </div>
         </section>
         <Farmer guide={guide} />
-        <Developers />
       </main>
       <Footer />
     </>
