@@ -35,17 +35,6 @@ export async function downloadReport(blob, name, lang) {
   saveBlob(file, `DragonKrishok_report_${lang}.pdf`);
 }
 
-export async function downloadGuide(lang) {
-  let res;
-  try {
-    res = await fetch(`/api/guide.pdf?lang=${lang}`);
-  } catch {
-    throw new ApiError("network");
-  }
-  if (!res.ok) throw new ApiError("network");
-  saveBlob(await res.blob(), `DragonKrishok_farmer_guide_${lang}.pdf`);
-}
-
 export const getJSON = (url) => fetch(url).then((r) => (r.ok ? r.json() : Promise.reject(new ApiError("network"))));
 
 export function saveBlob(blob, filename) {

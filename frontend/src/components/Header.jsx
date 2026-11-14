@@ -5,7 +5,7 @@ import { useTheme } from "../lib/theme.js";
 import Icon from "./Icon.jsx";
 import Logo from "./Logo.jsx";
 
-const LINKS = ["scan", "grades", "history", "map", "farmer", "dev"];
+const LINKS = ["scan", "grades", "history", "map", "farmer"];
 
 export default function Header() {
   const { t, toggle: toggleLang } = useLang();
