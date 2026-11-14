@@ -42,8 +42,6 @@ TEXT = {
         "scores": "How sure the AI is for each grade",
         "disclaimer": "For guidance only. This report is made by an AI model and can be wrong. "
                       "Ask a local agriculture officer before big decisions.",
-        "credit": "DragonKrishok - Designed and developed by Arpon Paul Amit - "
-                  "Supervisor: Nuzhat Tabassum, Assistant Professor, AIUB",
     },
     "bn": {
         "subtitle": "ড্রাগন ফলের মান যাচাই রিপোর্ট",
@@ -57,8 +55,6 @@ TEXT = {
         "scores": "প্রতিটি মানে এআই কতটা নিশ্চিত",
         "disclaimer": "শুধু পরামর্শের জন্য। এই রিপোর্ট একটি এআই মডেল তৈরি করেছে এবং ভুল হতে পারে। "
                       "বড় সিদ্ধান্তের আগে স্থানীয় কৃষি কর্মকর্তার পরামর্শ নিন।",
-        "credit": "ড্রাগন কৃষক - ডিজাইন ও ডেভেলপমেন্ট: অর্পণ পল অমিত - "
-                  "তত্ত্বাবধায়ক: নুজহাত তাবাসসুম, সহকারী অধ্যাপক, এআইইউবি",
     },
 }
 BN_DIGITS = str.maketrans("0123456789", "০১২৩৪৫৬৭৮৯")
@@ -118,9 +114,7 @@ class _PDF(FPDF):
         self.set_draw_color(*BORDER)
         self.line(MARGIN, PAGE_H - 20, PAGE_W - MARGIN, PAGE_H - 20)
         self.use(7.5, color=MUTED)
-        y = self.para(t["disclaimer"], MARGIN, PAGE_H - 18, CONTENT_W, 3.8, "C")
-        self.use(7.5, bold=True, color=MAGENTA)
-        self.para(t["credit"], MARGIN, y, CONTENT_W, 3.8, "C")
+        self.para(t["disclaimer"], MARGIN, PAGE_H - 18, CONTENT_W, 3.8, "C")
 
 
 def header(pdf: _PDF, subtitle: str, report_id: bool = True) -> None:
